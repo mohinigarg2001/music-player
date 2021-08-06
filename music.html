@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3 player</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="main_div">
+        <div class="music_container">
+            <h1 id="title">It's You</h1>
+            <h3 id="artist">Ali gate</h3>
+            <div class="img_container">
+                <img src="./images/a.jpg" alt="">
+            </div>
+            <audio src="./music/a.mp3" ></audio> 
+
+            <!--  Progress  bar -->
+            <div class="progressbar_container" id="progress_container">
+                <div class="progress_duration_meter">
+                    <div id="current_time">0:00</div>
+                    <div id="duration">3:33</div>
+                    
+                </div>
+                <div class="progress_div" id="progress_div">
+                <div class="progress" id="progress"></div>
+
+                </div>
+            </div>
+            <!--     controls      -->
+            <div class="music_controls">
+                <i class="fas fa-backward main_button" id="prev" title="Previous"></i>
+                <i class="fas fa-play main_button" id="play" title="Play"></i>
+                <!-- <i class="fas fa-pause main_button" id="pause" title="Pause"></i> -->
+
+                <i class="fas fa-forward main_button" id="next" title="Next"></i>
+               
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+   
+</html>
